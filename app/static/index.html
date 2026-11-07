@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4263d8">
+<title>Meetflow — Connect. Collaborate. Communicate.</title>
+<link rel="icon" href="/static/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="stylesheet" href="/static/motion.css">
+<link rel="stylesheet" href="/static/hero-video.css">
+<link rel="stylesheet" href="/static/highlights.css">
+<link rel="stylesheet" href="/static/meeting-launch.css">
+<link rel="stylesheet" href="/static/workspace.css">
+<link rel="stylesheet" href="/static/theme.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="Meetflow home"><img src="/static/assets/logo.svg" alt=""><span>Meetflow</span></a>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><button class="btn btn-ghost small" id="signOut">Sign out</button></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse-dot"></span> YOUR SPACE TO CONNECT</div>
+    <h1>Better meetings.<br><span class="gradient-text">Bigger ideas.</span></h1>
+    <p class="hero-sub">Bring people together with clear conversations, thoughtful collaboration, and room-ready performance for sessions of 100+ people.</p>
+    <div class="hero-actions"><button class="btn btn-primary" id="startMeeting"><span>＋</span> Start a meeting <span class="arrow">↗</span></button><button class="btn btn-secondary" id="openJoin">Join a meeting <span>→</span></button></div>
+    <div class="trust-line"><span class="avatar-stack"><i>N</i><i>C</i><i>+</i></span><span>No account needed · Just share a link</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="demo-window">
+      <video class="hero-demo-video" autoplay muted loop playsinline preload="metadata" poster="/static/assets/meeting-preview.jpg" aria-label="A realistic video-call scene with participants joining a meeting on a laptop">
+        <source src="/static/assets/meeting-preview.mp4" type="video/mp4">
+      </video>
+      <div class="demo-video-top"><span class="demo-video-brand"><img src="/static/assets/logo.svg" alt=""> Meetflow</span><span class="demo-video-live"><i></i> Live meeting</span></div>
+      <div class="demo-video-caption"><span>Creative sync</span><span>04 people</span></div>
+      <div class="demo-video-controls" aria-hidden="true"><span>♬</span><span>▣</span><span class="demo-video-share">▤</span><span>☷</span><span class="demo-video-leave">Leave</span></div>
+    </div>
+    <a class="demo-video-credit" href="https://www.pexels.com/video/a-person-at-a-video-call-8522975/" target="_blank" rel="noopener noreferrer">Video by Jeff Vinluan / Pexels</a>
+  </div>
+</section>
+<section class="highlights-carousel" id="highlightsCarousel" aria-label="Meetflow features and how it works" aria-roledescription="carousel">
+  <div class="highlights-topline"><span class="section-kicker">A BETTER WAY TO MEET</span><span id="highlightPosition" class="highlight-position" aria-live="off">01 / 05</span></div>
+  <div class="highlights-slides">
+    <article class="highlight-slide highlight-slide-meet" aria-roledescription="slide" aria-label="1 of 5" aria-hidden="false">
+      <div class="highlight-copy"><span class="highlight-step"><i>01</i> START IN SECONDS</span><h2>Bring your whole team into the room.</h2><p>Start a video meeting in seconds. Share one invite link and guests can join straight from their browser.</p><div class="highlight-tags"><span>Instant meetings</span><span>Guest access</span><span>HD video & audio</span></div></div>
+      <div class="highlight-visual"><img class="highlight-photo" src="/static/assets/slide-meeting.jpg" alt="Colleagues sharing ideas around a meeting table" loading="lazy"><div class="highlight-photo-overlay"></div><span class="highlight-photo-label"><i></i> CREATIVE TEAM SYNC</span><div class="highlight-photo-detail"><span class="highlight-photo-avatars"><i>N</i><i>A</i><i>M</i></span><span><b>Everyone's in.</b><small>4 people · Meeting live</small></span><span class="highlight-photo-live">● LIVE</span></div><a class="highlight-photo-credit" href="https://www.pexels.com/video/people-having-a-discussion-at-a-meeting-7507758/" target="_blank" rel="noopener noreferrer">Photo via Pexels</a></div>
+    </article>
+    <article class="highlight-slide highlight-slide-share" aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true" hidden>
+      <div class="highlight-copy"><span class="highlight-step"><i>02</i> WORK BETTER TOGETHER</span><h2>Make every idea a team effort.</h2><p>Share your screen, talk it through on video, and keep the conversation going with chat and notes.</p><div class="highlight-tags"><span>Screen sharing</span><span>Live chat</span><span>Meeting notes</span></div></div>
+      <div class="highlight-visual"><img class="highlight-photo" src="/static/assets/slide-collaboration.jpg" alt="Coworkers collaborating around a shared table and laptops" loading="lazy"><div class="highlight-photo-overlay"></div><span class="highlight-photo-label"><i></i> IDEAS IN PROGRESS</span><div class="highlight-photo-detail"><span class="highlight-photo-symbol">▤</span><span><b>Sharing the big picture</b><small>Screen share · Team chat · Notes</small></span><span class="highlight-photo-arrow">↗</span></div><a class="highlight-photo-credit" href="https://www.pexels.com/video/colleagues-having-a-discussion-at-the-office-8033300/" target="_blank" rel="noopener noreferrer">Photo via Pexels</a></div>
+    </article>
+    <article class="highlight-slide highlight-slide-plan" aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true" hidden>
+      <div class="highlight-copy"><span class="highlight-step"><i>03</i> MAKE TIME FOR IDEAS</span><h2>Get everyone on the same page.</h2><p>Schedule your next conversation, add an agenda, and give your team one clear place to meet.</p><div class="highlight-tags"><span>Plan ahead</span><span>Shared agenda</span><span>Easy invites</span></div></div>
+      <div class="highlight-visual"><img class="highlight-photo" src="/static/assets/slide-planning.jpg" alt="Team members planning a project together around a table" loading="lazy"><div class="highlight-photo-overlay"></div><span class="highlight-photo-label"><i></i> PLAN YOUR NEXT SESSION</span><div class="highlight-photo-detail"><span class="highlight-photo-symbol">◷</span><span><b>Weekly team sync</b><small>Agenda ready · Invite your team</small></span><span class="highlight-photo-arrow">→</span></div><a class="highlight-photo-credit" href="https://www.pexels.com/video/people-discussing-around-a-table-7668952/" target="_blank" rel="noopener noreferrer">Photo by Yaroslav Shuraev / Pexels</a></div>
+    </article>
+    <article class="highlight-slide highlight-slide-how" aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true" hidden>
+      <div class="highlight-copy"><span class="highlight-step"><i>04</i> HOW MEETFLOW WORKS</span><h2>Go from hello to let’s go.</h2><p>Create a room, invite people with one link, and get straight to the conversation. That's it.</p><div class="highlight-tags"><span>01 Create</span><span>02 Invite</span><span>03 Connect</span></div></div>
+      <div class="highlight-visual"><img class="highlight-photo highlight-photo-portrait" src="/static/assets/slide-brainstorm.jpg" alt="Colleagues gathering around a laptop to collaborate on a project" loading="lazy"><div class="highlight-photo-overlay"></div><span class="highlight-photo-label"><i></i> YOUR SPACE IS READY</span><div class="highlight-photo-detail"><span class="highlight-photo-symbol">✓</span><span><b>Meeting link copied</b><small>Share it. Join in. Get started.</small></span><span class="highlight-photo-arrow">↗</span></div><a class="highlight-photo-credit" href="https://www.pexels.com/video/professional-people-brainstorming-during-meeting-7643614/" target="_blank" rel="noopener noreferrer">Photo by MART PRODUCTION / Pexels</a></div>
+    </article>
+    <article class="highlight-slide highlight-slide-record" aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true" hidden>
+      <div class="highlight-copy"><span class="highlight-step"><i>05</i> KEEP THE MOMENT</span><h2>Pick up right where you left off.</h2><p>Capture a meeting in your browser, download the recording, and keep the important notes close.</p><div class="highlight-tags"><span>Browser recording</span><span>Downloadable video</span><span>Saved notes</span></div></div>
+      <div class="highlight-visual"><img class="highlight-photo" src="/static/assets/meeting-preview.jpg" alt="A laptop displaying a video call with several meeting participants" loading="lazy"><div class="highlight-photo-overlay"></div><span class="highlight-photo-label"><i></i> THE CONVERSATION CONTINUES</span><div class="highlight-photo-detail"><span class="highlight-photo-symbol highlight-record-dot">●</span><span><b>Capture the conversation</b><small>Record locally · Save notes · Download</small></span><span class="highlight-photo-arrow">↓</span></div><a class="highlight-photo-credit" href="https://www.pexels.com/video/a-person-at-a-video-call-8522975/" target="_blank" rel="noopener noreferrer">Photo by Jeff Vinluan / Pexels</a></div>
+    </article>
+  </div>
+  <div class="highlights-controls">
+    <div class="highlight-dots" role="group" aria-label="Choose a feature slide">
+      <button type="button" class="highlight-dot is-active" data-slide="0" aria-label="Show slide 1: Start in seconds" aria-current="true"></button>
+      <button type="button" class="highlight-dot" data-slide="1" aria-label="Show slide 2: Work better together"></button>
+      <button type="button" class="highlight-dot" data-slide="2" aria-label="Show slide 3: Make time for ideas"></button>
+      <button type="button" class="highlight-dot" data-slide="3" aria-label="Show slide 4: How Meetflow works"></button>
+      <button type="button" class="highlight-dot" data-slide="4" aria-label="Show slide 5: Keep the moment"></button>
+    </div>
+    <div class="highlight-buttons"><button type="button" id="highlightPause" class="highlight-control" aria-label="Pause automatic slides">Ⅱ <span>Pause</span></button><button type="button" id="highlightPrevious" class="highlight-control" aria-label="Previous slide">←</button><button type="button" id="highlightNext" class="highlight-control" aria-label="Next slide">→</button></div>
+  </div>
+</section>
+<section class="quick-panel">
+  <div class="quick-heading"><div><span class="section-kicker">GET STARTED</span><h2>Your next conversation starts here.</h2></div><span class="small-muted">Simple to start. Easy to share.</span></div>
+  <div class="quick-grid">
+    <article class="quick-card create-card"><div class="quick-icon purple">↗</div><h3>Start instantly</h3><p>Open a room and invite your people in seconds.</p><button class="text-action" id="startMeeting2">Create meeting <span>→</span></button></article>
+    <article class="quick-card"><div class="quick-icon blue">⇥</div><h3>Join a meeting</h3><p>Have a code or link? You're one step away.</p><button class="text-action" id="openJoin2">Enter meeting code <span>→</span></button></article>
+    <article class="quick-card"><div class="quick-icon green">▦</div><h3>Plan ahead</h3><p>Schedule a session and keep the agenda close.</p><button class="text-action" id="openSchedule">Schedule a meeting <span>→</span></button></article>
+  </div>
+</section>
+<section class="dashboard-section">
+  <div class="section-heading"><div><span class="section-kicker">MEETINGS HUB</span><h2>Your meetings</h2></div><button class="btn btn-secondary small" id="refreshMeetings">↻ Refresh</button></div>
+  <div class="workspace-toolbar">
+    <label class="meeting-search"><span aria-hidden="true">⌕</span><input id="meetingSearch" type="search" placeholder="Search meetings, agendas, or codes" aria-label="Search meetings"></label>
+    <div class="meeting-filters" role="group" aria-label="Filter meetings">
+      <button type="button" class="meeting-filter is-active" data-meeting-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="meeting-filter" data-meeting-filter="scheduled" aria-pressed="false">Scheduled</button>
+      <button type="button" class="meeting-filter" data-meeting-filter="instant" aria-pressed="false">Instant</button>
+    </div>
+  </div>
+  <div id="meetingList" class="meeting-list"><div class="empty-state"><div class="empty-symbol">◷</div><b>Your space is ready</b><p>Your scheduled and recent meetings will appear here.</p></div></div>
+  <div class="workspace-insights" aria-label="Meeting overview">
+    <article class="workspace-insight"><span>Saved meetings</span><strong id="savedMeetingCount">0</strong><small>In your Meetflow</small></article>
+    <article class="workspace-insight"><span>Coming up</span><strong id="upcomingMeetingCount">0</strong><small>Scheduled for the future</small></article>
+    <article class="workspace-insight"><span>Instant rooms</span><strong id="instantMeetingCount">0</strong><small>Ready to join anytime</small></article>
+    <article class="workspace-insight workspace-next"><span>Next meeting</span><strong id="nextMeetingTitle">Nothing scheduled</strong><small id="nextMeetingTime">Plan your next conversation</small></article>
+  </div>
+</section>
+<section class="feature-section" id="features"><div class="section-heading centered"><span class="section-kicker">MADE FOR REAL COLLABORATION</span><h2>More than a video call.</h2><p>Tools that help your team stay present, productive, and connected.</p></div>
+<div class="features-grid">
+<div class="feature"><div class="feature-icon">◉</div><h3>Face-to-face, anywhere</h3><p>Meet with browser-based audio and video. No account required.</p></div>
+<div class="feature"><div class="feature-icon">▣</div><h3>Share your screen</h3><p>Walk through a design, explain an idea, or present your work.</p></div>
+<div class="feature"><div class="feature-icon">▤</div><h3>Keep the conversation</h3><p>Use meeting chat and save notes to revisit key decisions.</p></div>
+<div class="feature"><div class="feature-icon">⏺</div><h3>Record your moment</h3><p>Record supported local media in your browser and download it.</p></div>
+<div class="feature"><div class="feature-icon">▦</div><h3>Plan with purpose</h3><p>Schedule meetings, add an agenda, and share an invitation link.</p></div>
+<div class="feature"><div class="feature-icon">✦</div><h3>Built for focus</h3><p>Use focus mode and practical controls to reduce distractions.</p></div>
+</div></section>
+<section class="how-section" id="how"><div><span class="section-kicker">HOW IT WORKS</span><h2>Three steps.<br><span class="gradient-text">One shared space.</span></h2></div><div class="steps"><div class="step"><span>01</span><div><b>Create or schedule</b><p>Start now or choose a time that works for everyone.</p></div></div><div class="step"><span>02</span><div><b>Share the invite</b><p>Send the meeting link to people you want to join.</p></div></div><div class="step"><span>03</span><div><b>Make it happen</b><p>Talk, share, chat, take notes, and keep moving forward.</p></div></div></div></section>
+<footer><a class="brand" href="#"><img src="/static/assets/logo.svg" alt=""><span>Meetflow</span></a><span>Connect. Collaborate. Communicate.</span><span>© Meetflow · Built for better conversations</span></footer>
+</main>
+
+<div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+<div id="toastRegion" class="toast-region" aria-live="polite"></div>
+<section class="meeting-launch" id="meetingLaunch" role="status" aria-live="polite" aria-atomic="true" hidden>
+  <div class="meeting-launch-card">
+    <div class="meeting-launch-emblem"><span class="meeting-launch-orbit"></span><img src="/static/assets/logo.svg" alt="Meetflow"></div>
+    <span class="meeting-launch-brand">Meetflow</span>
+    <h2 id="meetingLaunchTitle">Creating your meeting</h2>
+    <p id="meetingLaunchMessage">Setting up your Meetflow room.</p>
+    <div class="meeting-launch-progress" aria-hidden="true"><i></i><i></i><i></i></div>
+    <span class="meeting-launch-note">Your meeting is just a moment away</span>
+  </div>
+</section>
+
+<section class="meeting-shell" id="meetingShell" hidden>
+<header class="meeting-header"><a class="brand" href="/"><img src="/static/assets/logo.svg" alt=""><span>Meetflow</span></a><div class="room-info"><b id="roomTitle">Meeting room</b><span id="roomCode"></span><span class="connection-pill" id="connectionStatus"><i></i> Connecting</span></div><button class="btn btn-ghost small" id="copyInvite">↗ Copy invite</button></header>
+<div class="meeting-main">
+  <div class="video-stage"><div class="video-grid" id="videoGrid"><div class="waiting-card"><div class="waiting-spinner"></div><b>Preparing your space…</b><span>Connecting to the meeting</span></div></div>
+  <div class="stage-caption" id="stageCaption">Your meeting space</div></div>
+  <aside class="side-panel" id="sidePanel"><div class="panel-tabs"><button class="panel-tab active" data-panel="chat">Chat</button><button class="panel-tab" data-panel="people">People</button><button class="panel-tab" data-panel="notes">Notes</button></div>
+    <div class="panel-content" id="chatPanel"><div class="chat-messages" id="chatMessages"><div class="chat-empty">Say hello to get the conversation started.</div></div><form id="chatForm" class="chat-form"><input id="chatInput" placeholder="Write a message…" maxlength="1000" autocomplete="off"><button aria-label="Send message">➤</button></form></div>
+    <div class="panel-content" id="peoplePanel" hidden><div class="people-list" id="peopleList"></div></div>
+    <div class="panel-content notes-panel" id="notesPanel" hidden><label for="meetingNotes">Meeting notes</label><textarea id="meetingNotes" placeholder="Capture decisions, ideas, and action items…"></textarea><button class="btn btn-primary full" id="saveNotes">Save notes</button><p class="small-muted">Notes are saved to this local Meetflow database.</p></div>
+  </aside>
+</div>
+<footer class="meeting-controls">
+  <div class="control-group"><button class="control-btn" id="toggleMic" title="Mute microphone" aria-label="Mute microphone"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg></span><small>Mute</small></button><button class="control-btn" id="toggleCam" title="Stop video" aria-label="Stop video"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg></span><small>Stop video</small></button><button class="control-btn" id="shareScreen" title="Share screen" aria-label="Share screen"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5m0-14v5m-2-3 2-2 2 2"/></svg></span><small>Share screen</small></button></div>
+  <div class="control-group"><button class="control-btn" id="recordBtn" title="Start recording" aria-label="Start recording"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></svg></span><small>Record</small></button><button class="control-btn" id="raiseHand" title="Raise hand" aria-label="Raise hand"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11V5a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v6c0 4-2.5 7-6.5 7h-1c-2.5 0-3.8-1-5.2-2.7L4 14a1.5 1.5 0 0 1 2.2-2L8 14z"/></svg></span><small>Raise hand</small></button><button class="control-btn" id="focusMode" title="Focus mode" aria-label="Focus mode"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3"/></svg></span><small>Focus mode</small></button><button class="control-btn" id="toggleSide" title="Hide panel" aria-label="Hide panel"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h16"/><circle cx="8" cy="5" r="1" fill="currentColor" stroke="none"/></svg></span><small>Hide panel</small></button></div>
+  <button class="leave-btn" id="leaveMeeting" title="Leave meeting" aria-label="Leave meeting">Leave <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5m0-5-9 9"/><path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></span></button>
+</footer>
+<div class="meeting-footnote" id="recordingNotice">Recording is local to your browser. Let participants know before recording.</div>
+</section>
+<script src="/static/app.js"></script>
+</body></html>

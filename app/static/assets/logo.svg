@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14213D"/><stop offset="1" stop-color="#263B5B"/></linearGradient></defs>
+<style>
+.signal-ring{fill:none;stroke:#14213D;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:signal-pulse 2.4s ease-out infinite}
+@keyframes signal-pulse{0%{transform:scale(.6);opacity:.85}100%{transform:scale(2.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.signal-ring{animation:none;opacity:.3;transform:scale(1.5)}}
+</style>
+<rect x="5" y="11" width="39" height="31" rx="10" fill="none" stroke="url(#g)" stroke-width="4"/>
+<path d="M44 21 58 14v25l-14-7z" fill="url(#g)"/>
+<path d="M19 51h25M31.5 42v9" stroke="#14213D" stroke-width="4" stroke-linecap="round"/>
+<circle class="signal-ring" cx="18" cy="22" r="5"/>
+<circle cx="18" cy="22" r="3" fill="#14213D"/>
+</svg>
