@@ -52,6 +52,16 @@ npm run build
 
 The existing Python test suite for the original FastAPI backend remains available with `python -m pytest`, but the MERN application is started with Node.js. The Python backend is no longer the app entry point.
 
+## Deploying on Vercel
+
+The repository includes a Vercel configuration that builds the Vite client from `client/dist` and routes API, static meeting assets, and `/meetings` requests to the Node.js function. Configure these Vercel environment variables for the Production, Preview, and Development environments as needed:
+
+- `MONGODB_URI`
+- `JWT_SECRET` and `OTP_SECRET` (each at least 32 characters and different)
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, and `SMTP_FROM` for email verification
+
+Vercel can host the frontend and HTTP API, but its serverless functions cannot keep the app's WebSocket signaling connections alive. Video-call signaling and other real-time meeting features therefore need a persistent Node.js host; for the complete app, deploy the frontend/API and WebSocket server on a platform that supports long-lived connections.
+
 ## Troubleshooting
 
 - **MongoDB connection fails:** verify `MONGODB_URI`, network access, and Atlas database credentials.

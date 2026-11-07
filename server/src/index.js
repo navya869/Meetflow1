@@ -3,7 +3,7 @@ import { WebSocket, WebSocketServer } from "ws";
 import mongoose from "mongoose";
 import { app } from "./app.js";
 import { config } from "./config.js";
-import { Meeting, User } from "./models.js";
+import { connectToDatabase } from "./database.js";
 import { verifySessionToken } from "./security.js";
 
 const server = createServer(app);
@@ -132,8 +132,7 @@ webSocketServer.on("connection", (socket, { room, participantId }) => {
 });
 
 async function start() {
-  await mongoose.connect(config.mongoUri);
-  await Promise.all([User.init(), Meeting.init()]);
+  await connectToDatabase();
   server.listen(config.port, () => {
     console.log(`Meetflow MERN server listening on http://127.0.0.1:${config.port}`);
   });
